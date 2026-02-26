@@ -1,0 +1,20 @@
+- hosts: web
+  become: yes
+
+  tasks:
+    - name: Copy app files
+      copy:
+        src: ../app/
+        dest: /home/ubuntu/app/
+
+    - name: Stop old container
+      shell: sudo docker stop flask-app || true
+
+    - name: Remove old container
+      shell: sudo docker rm flask-app || true
+
+    - name: Build Docker image
+      shell: sudo docker build -t flask-app /home/ubuntu/app
+
+    - name: Run container
+      shell: sudo docker run -d -p 80:5000 --name flask-app flask-app
