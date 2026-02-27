@@ -42,7 +42,7 @@ A Flask web app deployed on AWS using Terraform and Ansible, with CI/CD automati
 
 
 # How It Works:
-1. Infrastructure (Terraform)
+1. Infrastructure (Terraform):
    
    Creates an EC2 instance (t3.micro) in eu-west-1
    
@@ -59,7 +59,7 @@ A Flask web app deployed on AWS using Terraform and Ansible, with CI/CD automati
    terraform apply  # Got public IP: 63.35.190.151
 
    
-2. Configuration (Ansible)
+2. Configuration (Ansible):
 
    First, installed Docker on the EC2:
 
@@ -72,11 +72,11 @@ A Flask web app deployed on AWS using Terraform and Ansible, with CI/CD automati
    ansible-playbook -i inventory.ini deploy_app.yml
 
 
-3. The Flask App
+3. The Flask App:
 
    Sample "Hello!!! Welcome to my Networks and System Administration" app running on port 5000, exposed on port 80 via Docker.
 
-4. CI/CD (GitHub Actions)
+4. CI/CD (GitHub Actions):
 
    Automatically deploys when I push to main branch. Had to fix:
 
