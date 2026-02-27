@@ -15,7 +15,9 @@ A Flask web app deployed on AWS using Terraform and Ansible, with CI/CD automati
 
 # Project Structure:
 
-├── .github/workflows/deploy.yml                           # CI/CD pipeline
+├── terraform/
+
+│   ├── main.tf                       # AWS infrastructure
 
 
 ├── ansible/
@@ -36,9 +38,8 @@ A Flask web app deployed on AWS using Terraform and Ansible, with CI/CD automati
 │   └── Dockerfile                    # Container config
 
 
-├── terraform/
+├── .github/workflows/deploy.yml                           # CI/CD pipeline
 
-└── main.tf                       # AWS infrastructure
 
 # How It Works:
 1. Infrastructure (Terraform)
