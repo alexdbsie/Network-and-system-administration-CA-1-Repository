@@ -73,7 +73,7 @@ A Flask web app deployed on AWS using Terraform and Ansible, with CI/CD automati
 
 3. The Flask App
 
-   Sample "Hello!!! Welcome to my Networks ans System Administration" app running on port 5000, exposed on port 80 via Docker.
+   Sample "Hello!!! Welcome to my Networks and System Administration" app running on port 5000, exposed on port 80 via Docker.
 
 4. CI/CD (GitHub Actions)
 
