@@ -100,7 +100,7 @@ Access the app:
 
 http://63.35.190.151
 
-# Lessons Learned:
+# Problems faced & Solutions:
 1. GitHub has a 100MB file limit - accidentally tried pushing Terraform provider files (797MB!).
 
    Fixed with proper **.gitignore**.
